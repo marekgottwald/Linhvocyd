@@ -46,3 +46,5 @@ This project uses assets and libraries from the following sources:
 ---
 
 Thank you for exploring this project!
+
+::Slava Ukraini!::
