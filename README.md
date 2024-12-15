@@ -13,9 +13,11 @@ The project is inspired by the linguicide (i.e., linguistic genocide) of the Ukr
    - `style.css` (optional custom styles)
    - `assets/` (contains required font, sound effects and favicons)
 
-Alternative Options:
+Alternatively:
 - **Run the project on GitHub Pages**: [https://marekgottwald.github.io/Linhvocyd/](https://marekgottwald.github.io/Linhvocyd/)
 - **Run the project in the p5.js Web Editor**: [https://editor.p5js.org/HalfBlood/sketches/0ttA7QUip](https://editor.p5js.org/HalfBlood/sketches/0ttA7QUip)
+
+**Note**: On mobile devices, you may need to tap the screen to enable sound playback.
 
 ## Repository Structure
 ```plaintext
