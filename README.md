@@ -11,7 +11,7 @@ The project is inspired by the linguicide (i.e., linguistic genocide) of the Ukr
 2. Ensure the following files and folders are in the same directory as `index.html`:
    - `sketch.js` (contains the animation logic)
    - `style.css` (optional custom styles)
-   - `assets/` (contains required fonts, sound effects, and favicons)
+   - `assets/` (contains required font, sound effects and favicons)
 
 Alternative Options:
 - **Run the project on GitHub Pages**: [https://marekgottwald.github.io/Linhvocyd/](https://marekgottwald.github.io/Linhvocyd/)
