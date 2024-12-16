@@ -39,6 +39,7 @@ Alternatively:
 ## Acknowledgments
 This project uses assets and libraries from the following sources:
 - **[p5.js](https://p5js.org/)**: Animation and sound library.
+- **[Howler.js](https://howlerjs.com/)**: Library for managing and playing sounds.
 - **[RobotoMono-Thin.ttf](https://fonts.google.com/specimen/Roboto+Mono?lang=uk_Cyrl)**: Font from Google Fonts.
 - **[Freesound.org - Mechanical Keyboard Sounds](https://freesound.org/search/?q=key+press+tactile&f=grouping_pack%3A%2242151_Mechanical+Keyboards%22)**: Source of sound effects used in this project.
 - **[favicon.io - Ukraine Flag](https://favicon.io/emoji-favicons/flag-ukraine)**: Favicon generator for the Ukrainian flag icon.
