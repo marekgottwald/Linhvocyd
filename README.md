@@ -15,9 +15,8 @@ The project is inspired by the linguicide (i.e., linguistic genocide) of the Ukr
 
 Alternatively:
 - **Run the project on GitHub Pages**: [https://marekgottwald.github.io/Linhvocyd/](https://marekgottwald.github.io/Linhvocyd/)
+   - **Note**: You may need to click on the screen to enable sound playback.
 - **Run the project in the p5.js Web Editor**: [https://editor.p5js.org/HalfBlood/sketches/0ttA7QUip](https://editor.p5js.org/HalfBlood/sketches/0ttA7QUip)
-
-**Note**: You may need to click on the screen to enable sound playback.
 
 ## Repository Structure
 ```plaintext
