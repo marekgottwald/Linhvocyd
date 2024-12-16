@@ -77,14 +77,20 @@ function preload() {
   // Load custom font for text rendering
   myFont = loadFont('assets/fonts/RobotoMono-Thin.ttf');
 
-  // Load typing sound effects (key presses)
+  // Initialize key sounds
   for (let i = 1; i <= 15; i++) {
-    keySounds.push(loadSound(`assets/sounds/keyboard_tactile_${i}.ogg`)); 
+    keySounds.push(new Howl({
+      src: [`assets/sounds/keyboard_tactile_${i}.ogg`],
+      volume: 0.8 // Default volume for key sounds
+    }));
   }
 
-  // Load spacebar sound effects
-  for (let i = 2; i <= 19; i++) {
-    spaceSounds.push(loadSound(`assets/sounds/keyboard_clicky_${i}.ogg`));
+  // Initialize spacebar sounds
+  for (let i = 2; i <= 19; i++) { 
+    spaceSounds.push(new Howl({
+      src: [`assets/sounds/keyboard_clicky_${i}.ogg`],
+      volume: 0.6 // Default volume for spacebar sounds
+    }));
   }
 }
 
@@ -386,7 +392,7 @@ function getRandomPause(minPause, maxPause) {
 }
 
 /**
- * Plays a keyboard sound effect.
+ * Plays a keyboard sound effect using Howler.js.
  * 
  * @param {boolean} isSpace - Indicates whether the sound is for a spacebar press (default: false).
  */
@@ -395,20 +401,18 @@ function playKeySound(isSpace = false) {
 
   if (isSpace) {
     // Select a random sound from the spacebar sound pool
-    randomSound = random(spaceSounds);
-
-    // Set volume for spacebar sounds (quieter range for realism)
-    randomSound.setVolume(random(0.5, 0.8));
+    randomSound = spaceSounds[Math.floor(Math.random() * spaceSounds.length)];
   } else {
     // Select a random sound from the key press sound pool
-    randomSound = random(keySounds);
-
-    // Set volume for key press sounds (slightly louder range)
-    randomSound.setVolume(random(0.5, 1));
+    randomSound = keySounds[Math.floor(Math.random() * keySounds.length)];
   }
 
-  // Add a slight delay before playing the sound for more natural typing feedback
-  setTimeout(() => randomSound.play(),15);
+  // Stop the sound if it's already playing (to prevent overlap)
+  randomSound.stop();
+
+  // Set the volume and play the sound
+  randomSound.volume(isSpace ? 0.6 : 0.8); // Fixed volume for realism
+  randomSound.play();
 }
 
 /**
